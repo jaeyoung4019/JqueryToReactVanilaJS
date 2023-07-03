@@ -1,4 +1,4 @@
-## JQeury Function 을 React 에서 사용할 수 있도록 만들겠습니다.
+## JQeury Function 을 React로 변경.. 맞나..
 
 
 ```ts
@@ -23,7 +23,7 @@ function tabScrollerPosition() {
 
 ```
 
-원래 함수는 이렇게 만들고 Document.ready 상황일 때 실행하도록 되어 있었습니다. 버튼 클릭시 새로 스크롤을 잡아줘야하기 때문에 버튼 클릭 시마다 실행하도록 변경하기 위해서 React 용 코드로 변경하였습니다.
+
 
 ```ts
 
@@ -52,9 +52,8 @@ function tabScrollerPosition() {
         </nav>
     )
 ```
+## 이 코드가 틀리다면 알려주세요.. JQuery 넘 어렵따. 
 
-이런 식으로 변경하였고 x 축을 가져오는 함수인 .getBoundingClientRect() 가 존재하는 것을 안 시간이였습니다.
+1. .getBoundingClientRect() -> Document Element 좌표 값 가져오는 함수
 
-이 외에 궁굼한 점은
-
-다만 타입스크립트에서 listTab.scrollLeft 를 ? 문법으로 처리하지 못하는 것이 궁금할 뿐입니다!.
+2. 타입스크립트에서 listTab.scrollLeft 를 ? 문법으로 처리하지 못하는 이유가 무엇일까.
