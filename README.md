@@ -1,4 +1,4 @@
-## JQeury Function 을 React로 변경.. 맞나..
+## JQeury -> React
 
 
 ```ts
